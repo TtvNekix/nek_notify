@@ -16,14 +16,6 @@ function Noti(type, title, msg, bar, bar_value)
     })
 end
 
-RegisterCommand('closetest', function()
-    CloseNoti()
-end)
-
-RegisterCommand('testnoti', function(src, args)
-    Noti(args[1], "Test Notify", "Testing a very hot notification...", true, args[2])
-end)
-
 function CloseNoti()
     SendNUIMessage({
         show = false;
