@@ -1,7 +1,7 @@
 $(function() {
     var clase = null;
     $(".container").hide()
-    window.addEventListener("message", function(v) {
+    window.addEventListener("message", function(event) {
         const val = event['data']
         if (val['show']) {
             console.log(val['type']);
